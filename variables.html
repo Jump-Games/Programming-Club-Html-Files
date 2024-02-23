@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Variables</title>
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>-->
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <!--  Bread Crumb Links  -->
+    <p><a href="main.html">Main Page</a> &gt; Variables</p>
+
+    <h1 id="variables">Variables</h1>
+    <p>
+        <strong><em>Variables</em></strong>, in computer programming, hold data that can be used, manipulated, or
+        changed. Variables can be:
+    </p>
+    <ul>
+        <li>
+            Integers
+            <ul>
+                <li>5</li>
+                <li>-6</li>
+            </ul>
+        </li>
+        <li>
+            Floating Point Numbers
+            <ul>
+                <li>6.34</li>
+                <li>-12.52</li>
+            </ul>
+        </li>
+        <li>
+            <a href="stringsAndChars.html">Strings</a>
+            <ul>
+                <li>&quot;Hello.&quot;</li>
+            </ul>
+        </li>
+        <li>
+            <a href="stringsAndChars.html">Characters</a>
+            <ul>
+                <li>&#39;g&#39;</li>
+                <li>&#39;p&#39;</li>
+            </ul>
+        </li>
+        <li>
+            <a href="booleans.html">Boolean Values</a>
+            <ul>
+                <li>True</li>
+                <li>False</li>
+            </ul>
+        </li>
+    </ul>
+    
+    <p>
+        These are just examples of values you can assign. There&#39;s quite a lot more you can do with these. Here&#39;s
+        an
+        example writtenin C++:
+    </p>
+    
+    <pre><code class="prettyprint">int integerVariable = 100;
+float floatingPointVariable = 123.62;
+std::string stringVariable = "Hello, World!"; // Strings use double quotes
+char characterVariable = &#39;k&#39;; // Characters use single quotes
+bool booleanVariable = false;</code></pre>
+    
+    <p>By the way, those <code class="prettyprint inline">//</code> symbols start a <a href="comments.html">comment</a>, which can help you understand code. You can also change variables through code. Here&#39;s how (in C++):</p>
+    
+    <div><pre><code id="first" class="prettyprint">integerVariable = 120;
+integerVariable += 30; // integerVariable now has the value of &#39;150&#39;
+
+// You can do similar things with floats, too
+
+stringVariable = "This is a new string";
+// You can also concatenate strings 
+stringVariable += ", and now it is newer"; // stringVariable now has the value of "This is a new string, and now it is newer"
+
+characterVariable = &#39;d&#39;;
+// You cannot concatenate char&#39;s (or booleans), as far as I know, because they can only hold one character
+
+booleanVariable = true;</code></pre>
+
+    <p>Maybe you've kept track of a score, someone's name, or something else important (or even unimportant), 
+    but you don't know how to use it. Well, all you got to do is write the name. Here's an example in C++:</p>
+    
+    <pre><code class="prettyprint">#include &lt;iostream&gt; /*Allows printing to the console*/
+
+int main()
+{
+    std::string name = "John";
+
+    std::cout &lt;&lt; "Hello, " &lt;&lt; name /*The variable defined earlier*/ &lt;&lt; std::endl; // Prints "Hello, John" to the console
+    return 0; // Ends the program
+}
+</body>
+
+</html>

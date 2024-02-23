@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Boolean Variables</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <!-- Bread Crumb Links -->
+    <p>
+        <a href="main.html">Main Page</a> &gt;
+        <a href="variables.html">Variables</a> &gt; Boolean Variables
+    </p>
+
+    <h1>Boolean Variables</h1>
+    <p>Booleans can either be <strong>True</strong>, or <strong>False</strong>.
+        You will probably see them come up in <a href="ifs.html">If Statements</a>.
+        There are a couple of operations you can apply to them, using something
+        called Boolean Algebra (link to a Wikipedia article
+        <a href="https://en.wikipedia.org/wiki/Boolean_algebra">here</a>).
+        Some basic operations you can do are listed in this table below:
+    </p>
+
+    <!-- Boolean Algebra Operations Table Below -->
+    <table>
+        <caption>0 represents False and 1 represents True</caption>
+        <tr>
+            <th>x</th>
+            <th>y</th>
+            <th>x OR y<br>x &or; y</th>
+            <th>x AND y<br>x &and; y</th>
+            <th>x XOR y<br>x ⊕ y</th>
+            <th>NOT x<br>&not;x</th>
+        </tr>
+        <!--<tr>
+            <td colspan="2">Logic Gate<br>Symbol</td>
+            <td style="background-color: white;"><img src="images/orgate.png" /></td>
+            <td><img src="images/andgate.png" /></td>
+            <td style="background-color: white;"><img src="images/xorgate.png" /></td>
+            <td><img src="images/notgate.png" /></td>
+        </tr>-->
+        <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+            <td style="background-color: white; border-color: white"></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>0</td>
+            <td style="background-color: white; border-color: white;"></td>
+        </tr>
+    </table>
+
+    <p>
+        In this table, it shows the &or; (OR), &and; (AND), ⊕ (XOR), and &not; (NOT) operators. The &or; operator
+        results in the
+        the value <strong>True</strong>, if either x or y, including x <em>and</em> y, are <strong>True</strong>.
+        The &and; operator is similar, but only results in <strong>True</strong>, if <em>both</em> values are
+        <strong>True</strong>.
+        The ⊕ operator is similar to the &or; operator, but if both values are <strong>True</strong>, then the resulting
+        value is
+        <strong>False</strong>. The &not; operator inverts the inputted value.
+    </p>
+</body>
+
+</html>
